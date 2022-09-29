@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+    font-size: 62.5%;
+    --font: 'Red Hat Display', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: auto;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 1.6rem;
+    font-family: var(--font);
+    background-color: hsl(225, 100%, 94%);
+    background-image: url("images\\pattern-background-mobile.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#order-container {
+    max-width: 400px;
+    min-width: 300px;
+    margin: 0 3rem;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+#image {
+    width: 100%;
+}
+
+#image img {
+   width: 100%;
+   display: inherit;
+}
+
+#details {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 1.7em;
+    gap: 1.5em;
+}
+
+.heading {
+    font-size: 2.7rem;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+p {
+    width: 85%;
+    padding: 0 0.5em;
+    line-height: 2.5ch;
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+}
+
+.grid {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 0.7fr repeat(2, 1fr);
+    grid-template-rows: auto;
+}
+
+@media screen and (min-width: 420px) {
+    .grid {
+        width: 85%;
+    }
+
+    body {
+        background-color: hsl(225, 100%, 94%);
+        background-image: url("images\\pattern-background-desktop.svg");
+        background-size: auto;
+    }
+}
+
+.grid img {
+    grid-column: 1 / 2;
+}
+
+.subscription {
+    grid-column: 2 / 3;
+}
+
+.annual {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.price {
+    color: hsl(224, 23%, 55%);
+}
+
+.change {
+    font-weight: 700;
+    grid-column: 3 / 4;
+    color: hsl(245, 75%, 52%);
+    position: absolute;
+    right: 0;
+    top: calc(50% - 1.5rem);
+    transition: 0.2s;
+}
+
+.change:hover {
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+}
+
+button {
+    font-size: 1.6rem;
+    font-family: var(--font);
+    font-weight: 700;
+    padding: 1em;
+    border-radius: 12px;
+    width: 100%;
+    border: none;
+}
+
+.proceed {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    box-shadow: 5px 20px 20px hsl(225, 100%, 94%) , -5px 20px 20px hsl(225, 100%, 94%);
+    transition: 0.2s;
+}
+
+.proceed:hover {
+    background-color: hsl(224, 23%, 55%);
+}
+
+.cancel {
+    width: fit-content;
+    padding: 0;
+    color: hsl(224, 23%, 55%);
+    transition: 0.2s;
+}
+
+.cancel:hover {
+    color:hsl(223, 47%, 23%);
+}
+
+.attribution {
+    margin-top: 1rem;
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(236, 94%, 49%); 
+    text-decoration: none;
+}
