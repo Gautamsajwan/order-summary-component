@@ -17,7 +17,7 @@ body {
     font-family: var(--font);
     background-color: hsl(225, 100%, 94%);
     background-image: url("images\\pattern-background-mobile.svg");
-    background-size: auto;
+    background-size: contain;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -25,7 +25,7 @@ body {
     align-items: center;
 }
 
-#order-container {
+.order-container {
     max-width: 400px;
     min-width: 300px;
     margin: 0 3rem;
@@ -37,22 +37,22 @@ body {
     justify-content: center;
 }
 
-#image {
+.image {
     width: 100%;
 }
 
-#image img {
+.image img {
    width: 100%;
    display: inherit;
 }
 
-#details {
+.details {
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     padding: 1.7em;
-    gap: 1.5em;
+    gap: 2em;
 }
 
 .heading {
