@@ -26,8 +26,8 @@ body {
 }
 
 .order-container {
-    max-width: 400px;
-    min-width: 300px;
+    max-width: 420px;
+    min-width: 320px;
     margin: 0 3rem;
     border-radius: 20px;
     overflow: hidden;
@@ -51,7 +51,7 @@ body {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    padding: 1.7em;
+    padding: 3em;
     gap: 2em;
 }
 
@@ -62,8 +62,6 @@ body {
 }
 
 p {
-    width: 85%;
-    padding: 0 0.5em;
     line-height: 2.5ch;
     color: hsl(224, 23%, 55%);
     text-align: center;
@@ -78,10 +76,6 @@ p {
 }
 
 @media screen and (min-width: 420px) {
-    .grid {
-        width: 85%;
-    }
-
     body {
         background-color: hsl(225, 100%, 94%);
         background-image: url("images\\pattern-background-desktop.svg");
